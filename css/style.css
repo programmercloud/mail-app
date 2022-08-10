@@ -7,7 +7,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  font-family: "Nunito", sans-serif;
+  font-family: sans-serif;
   font-size: 12px;
   line-height: 1.3;
   background-image: linear-gradient(to right bottom, #0e1419, #336076);
@@ -105,13 +105,9 @@ body {
   height: 40px;
 }
 
-.hamburger {
-  cursor: pointer;
-}
-
 .hamburger span,
-.hamburger span::before,
-.hamburger span::after {
+.hamburger span::after,
+.hamburger span::before {
   width: 22px;
   height: 1.8px;
   position: absolute;
@@ -141,7 +137,7 @@ body {
 }
 
 .message.unread::before {
-  color: #4966ff;
+  color: #1136f3;
 }
 
 .message__from {
@@ -171,11 +167,16 @@ body {
   background-color: #d4d4d4;
   cursor: pointer;
 }
+
 .background {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 0;
+}
+
+.hamburger {
+  cursor: pointer;
 }
 
 .menu__item {
@@ -184,6 +185,7 @@ body {
   color: #999;
   cursor: pointer;
 }
+
 .menu__item:hover {
   color: #000;
   background-image: linear-gradient(to right, #d6dff4, transparent);
@@ -195,10 +197,11 @@ body {
   height: 100%;
   margin-left: 10px;
   border-radius: 25px;
-  text-align: center;
   background-color: #06fa88;
+  text-align: center;
   color: #fff;
 }
+
 .sign__out {
   position: absolute;
   bottom: 10px;
